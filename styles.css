@@ -1,0 +1,360 @@
+:root {
+  --main-white: #EBEBEB;
+  --main-gray: #3E3E3E;
+  --dark-gold: #E7970A;
+  --orange: #F57E00;
+  --chocolate-web: #CC6900;
+  --dark-orange: #FF890A;
+  --black-bean: #3A0E03;
+  
+  /*GRADIENT*/
+  --dark-sienna: #250902ff;
+  --dark-sienna-2: #38040eff;
+  --rosewood: #640d14ff;
+  --ou-crimson-red: #800e13ff;
+  --upsdell-red: #ad2831ff;
+}
+
+/*RESET the default setting*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/*DEFAULT*/
+html {
+  font-size: 10px;
+  
+  scroll-behavior: smooth;
+}
+
+/*STYLE*/
+
+body {
+  
+  
+  font-family:  'Times New Roman', serif;
+  font-weight: 500;
+  text-align: left;
+  
+
+  
+  overflow-x: hidden;
+  color: ;
+}
+
+h1, h2{
+  margin-top: 60px;
+  font-family:  'Ubuntu', serif;
+  font-size: 60px;
+  
+}
+
+h2{
+ 
+  font-size: 30px;
+  
+}
+h3{
+	
+	font-size: 20px;
+}
+
+p{
+	text-indent: 15px;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 35px;
+	
+}
+.content {
+	
+	margin-top: 30px;
+	padding: 40px 100px;
+	
+}
+
+
+.content p button{
+	
+	
+
+}
+
+
+.intro-section {
+	margin-top: 10px;
+	
+	
+}
+
+
+.nav-hidden {
+
+	width: 350px;
+	height: 100vh;/*visual area 100%*/
+	position: fixed; /*will show on top of everything*/
+	
+	/*position in the top right corner*/
+	top: 0;
+	right: 0;
+	padding: 15px 15px;
+	
+	background-color: #FFA500;
+	transform: translateX(px);
+}
+
+.nav-close{
+	
+	background: none;
+	border: none;
+	
+	/*vertically align close icon*/
+	display: flex;
+	align-items: center;
+	
+	/*cancel btn position at right of the menu*/
+	margin-left: auto;
+	
+	padding: 20px 30px;
+	color: #FFFFFF;
+	
+	cursor: pointer;
+	
+	
+	
+}
+
+
+.navbar{
+  
+	background-color: #ffffff;
+	
+	top: 0;
+	margin:0 auto;
+	width: 100%;
+	padding: 0px 10px 0px 80px;
+	height:auto;
+	font-size: 25px;
+	display:inline-block;
+	box-shadow: 0 4px 2px -2px black;
+	position: -webkit-sticky;
+	position: sticky;
+	
+	
+	
+}
+.navbar ul {
+	
+	
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	float:left;
+	display:inline-block;
+}
+
+.navbar ul li {
+  
+	
+	position:relative;
+	margin:0 100px 0 0;
+	float:left;
+	display:inline-block;
+	
+}
+
+/*menu-fontcolor*/
+.navbar ul li a {
+	width:100%;
+	color: black;
+	padding:20px;
+	display:inline-block;
+	
+	text-decoration:none;
+}
+
+.navbar ul li a:hover {
+  background: black;
+  color: white;
+  
+  width:100%;
+	
+}
+
+
+/*menu sub-menu*/
+.navbar ul li ul {
+  
+  
+	display:none;
+	position:absolute;
+	left:0;
+	background: var(--main-white);
+	float:left;
+	
+	
+	
+}
+
+.navbar ul li ul li{
+	width:100%;
+	border-bottom:1px solid rgba(255,255,255,.8);
+	
+}
+
+.navbar ul li:hover ul {
+  
+	display: block;
+  
+	
+	
+	
+	
+	
+}
+
+<!-- HTML !-->
+<button class="button-28" role="button">Button 28</button>
+
+
+
+/* CSS */
+.introbtn {
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.introbtn a {
+	 display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  margin-bottom: 30px;
+}
+.introbtn a span{
+	
+	position: relative;
+	z-index: 2;
+  
+}
+
+.introbtn a:after {
+	
+	position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  transition: all .35s;
+}
+
+.introbtn a:hover{
+	
+	  color: #fff;
+}
+
+.introbtn a:hover:after{
+  width: 100%;
+}
+
+.intro-img {
+	
+	margin-left: 30px;
+}
+
+.profile-img{
+	vertical-align: middle;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	
+
+}
+ion-icon {
+  font-size: 64px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	grid-template-rows: 80px 200px;
+	
+	gap: 30px;
+	
+	padding: 10px;
+	
+	
+	
+	
+	
+	
+}
+
+/* Contact us Form */
+
+input[type=text], textarea {
+	width: 100%;
+	padding: 12px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 20px;
+	resize: vertical;
+}
+
+input[type=submit]{
+	background-color: black;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	
+	margin-bottom: 50px;
+	
+	align-items: center;
+	
+}
+input[type=submit]:hover{
+	background-color: var(--main-gray);
+
+
+	
+}
+
+.contactUs{
+	
+	padding: 20px;
+	border-radius: 5px;
+	
+	
+}
+
+label{
+	
+	
+	font-size: 15px;
+	
+}
+form{
+	margin-top: 30px;
+	
+	
+}
