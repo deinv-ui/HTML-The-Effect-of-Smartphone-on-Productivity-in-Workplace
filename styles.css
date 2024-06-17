@@ -1,11 +1,7 @@
 :root {
   --main-white: #EBEBEB;
   --main-gray: #3E3E3E;
-  --dark-gold: #E7970A;
-  --orange: #F57E00;
-  --chocolate-web: #CC6900;
-  --dark-orange: #FF890A;
-  --black-bean: #3A0E03;
+  
   
   /*GRADIENT*/
   --dark-sienna: #250902ff;
@@ -35,7 +31,7 @@ html {
 body {
   
   
-  font-family:  'Times New Roman', serif;
+  font-family:  Helvetica, sans-serif;
   font-weight: 500;
   text-align: left;
   
@@ -54,29 +50,59 @@ h1, h2{
 
 h2{
  
-  font-size: 30px;
+  font-size: 40px;
   
 }
 h3{
-	
-	font-size: 20px;
+	 font-family:  'Ubuntu', serif;
+	font-size: 30px;
 }
 
+h3 .Cap{
+	
+	 text-transform: capitalize;
+}
+
+h4 {
+	 font-family:  'Ubuntu', serif;
+	font-size: 20px;
+}
 p{
 	text-indent: 15px;
 	font-size: 20px;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	line-height: 35px;
 	
 }
+
+.video{
+	
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	
+	
+}
+.ref li{
+	margin-top: 60px;
+	line-height: 25px;
+}
+
 .content {
 	
+	font-size: 20px;
+
 	margin-top: 30px;
 	padding: 40px 100px;
+	line-height: 35px;
 	
 }
 
+.contentsize {
+	
+	font-size: 25px;
+}
 
 .content p button{
 	
@@ -131,7 +157,7 @@ p{
 
 .navbar{
   
-	background-color: #ffffff;
+	background-color: white;
 	
 	top: 0;
 	margin:0 auto;
@@ -143,6 +169,7 @@ p{
 	box-shadow: 0 4px 2px -2px black;
 	position: -webkit-sticky;
 	position: sticky;
+	z-index: 100;
 	
 	
 	
@@ -178,7 +205,7 @@ p{
 }
 
 .navbar ul li a:hover {
-  background: black;
+  background: #036bff;
   color: white;
   
   width:100%;
@@ -217,16 +244,56 @@ p{
 	
 }
 
-<!-- HTML !-->
-<button class="button-28" role="button">Button 28</button>
+
+/*Pros and Cons*/
+.subtitle {
+	
+	margin-top: 130px;
+}
+
+.con-img{
+	
+	float:right; 
+	width:600px;
+	height:400px;
+	margin-left: 60px;
+}
+
+.con-imgr{
+	
+	float:left; 
+	width:600px;
+	height:400px;
+	margin-right: 60px;
+}
+
+.container {
+	
+	width: 90%;
+	margin: 50px auto;
+	
+	
+}
+
+.head{
+	text-align: left;
+	margin-bottom: 50px;
+	
+	
+}
+.indexhead{
+	
+	 
+	vertical-align: top;
+}
 
 
 
-/* CSS */
 .introbtn {
 	
-	position: fixed;
-	top: 50%;
+	margin-top: 50px;
+	position: relative;
+	
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -261,7 +328,7 @@ p{
   left: 0;
   width: 0;
   height: 100%;
-  background: black;
+  background: #036bff;
   transition: all .35s;
 }
 
@@ -278,18 +345,74 @@ p{
 	
 	margin-left: 30px;
 }
-
-.profile-img{
-	vertical-align: middle;
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
+.bgimg{
 	
+	
+	height: 100vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/5935792/pexels-photo-5935792.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size:cover;
+	position: relative;
+  text-align: center;
+  color: white;
+  
+  
+}
+
+
+.centered{
+	
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+	
+	padding: 40px;
 
 }
+.centered:hover{
+	opacity: 0.9;
+}
+
+.centered span a {
+	
+	color: #1ed2ff;
+	font-size: 20px;
+	padding: 50px;
+}
+.profile-img{
+	vertical-align: middle;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	border: 5px solid #036bff;
+	margin-top: 20px;
+
+
+}
+
+.profile-img:hover{
+	width: 190px;
+	height: 190px;
+}
+
+
+
 ion-icon {
   font-size: 64px;
 }
+
+.subheading {
+	
+	margin-top: 80px;
+	
+}
+
+
+
+/* Contact us Form */
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -306,9 +429,6 @@ ion-icon {
 	
 	
 }
-
-/* Contact us Form */
-
 input[type=text], textarea {
 	width: 100%;
 	padding: 12px;
@@ -330,10 +450,11 @@ input[type=submit]{
 	margin-bottom: 50px;
 	
 	align-items: center;
-	
+	font-weight: bold;
 }
 input[type=submit]:hover{
-	background-color: var(--main-gray);
+	background-color: #036bff;
+	color: white;
 
 
 	
@@ -355,6 +476,149 @@ label{
 }
 form{
 	margin-top: 30px;
+	
+	
+}
+
+/*Members Section*/
+.column1 {
+  float: left;
+  width: 35%;
+  margin-left: 100px;
+  
+}
+
+.row1 {
+	margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Float columns side by side */
+.column {
+	
+  float: left;
+  width: 60%;
+  padding: 0px;
+  
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+	margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#containercard{
+	
+	margin-left: 80px;
+	
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  border-radius: 50px;
+  padding: 16px;
+  text-align: center;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 500px;
+  height: 550px;
+  color: white;
+}
+
+
+.subtitle{
+	
+	margin-top: 40px;
+}
+.card-header{
+	
+	font-size: 45px;
+}
+.cardbody{
+	
+	padding-left: 15px
+	padding-right: 15px;
+	padding-bottom: 20px;
+}
+
+.listcenter{
+	
+	 text-align: left;
+	 font-size:15px;
+	 padding: 70px;
+	 padding-top: 0;
+	 padding-left: 80px;
+}
+
+.iconsize i{
+	
+	
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-indent: 15px;
+	
+	
+}
+
+.iconsize a {
+	
+	color: black;
+}
+
+.iconsize a:hover {
+	
+	color:  #036bff;
+}
+
+.conhp {
+	
+	margin-top: 60px;
+}
+
+/*Discussion*/
+.discussionimg{
+	
+	height: 100vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/2422280/pexels-photo-2422280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size:cover;
+	position: relative;
+  text-align: center;
+   color: white;
+  
+	
+}
+
+.probimg{
+	
+	margin-top: 100px;
+	height: 100vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size:cover;
+	position: relative;
+  text-align: center;
+   color: white;
+  
+	
+}
+
+.chart p img {
 	
 	
 }
